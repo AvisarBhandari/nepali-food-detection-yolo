@@ -1,0 +1,15 @@
+
+path:path:  /home/me/Documents/New Folder/nepali-food-yolo/Dataset # Dataset root dir
+train: train/images # Train images (relative to path)
+val: val/images # Val images (relative to path)
+
+nc: 7
+
+names:
+  0: chatpate
+  1: dal_bhat
+  2: gundruk
+  3: momo
+  4: samosa
+  5: sel_roti
+  6: yomari
