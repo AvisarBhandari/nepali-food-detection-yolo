@@ -13,12 +13,12 @@ def train(epochs=1):
         epochs=epochs,
         imgsz=640,
         save=True,
-        patience=5,
+        patience=10,
+        plots=True,
     )
 
 
 def load_model(model_path, source=None, save=True, show=False):
-    source = "Nepali_Food_Image/momo/images/momo-23_jpg.rf.XWkDcURRVlcigz0Ibk3u.jpg"
     model = YOLO(model_path)
     results = model.predict(
         source=source,
@@ -38,6 +38,6 @@ def load_model(model_path, source=None, save=True, show=False):
         print("Confidence:", confs)
 
 
-load_model(model_path="runs/detect/train/weights/best.pt", show=True)
+# load_model(model_path="runs/detect/train-2/weights/best.pt",source="Nepali_Food_Image/chatpate/images/chatpate8_png.rf.vxPvQQSR1hvEV6pJFL6o.png", show=True)
 # if __name__ == "__main__":
-#     train(epochs=10)
+#     train(epochs=1)

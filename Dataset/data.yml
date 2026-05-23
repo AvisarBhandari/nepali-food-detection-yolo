@@ -1,5 +1,5 @@
 
-path:path:  /home/me/Documents/New Folder/nepali-food-yolo/Dataset # Dataset root dir
+path:path: /home/me/Documents/New Folder/nepali-food-yolo/Dataset # Dataset root dir
 train: train/images # Train images (relative to path)
 val: val/images # Val images (relative to path)
 
